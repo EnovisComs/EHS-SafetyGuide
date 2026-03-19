@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="page.title">EHS - Enovis | Guía para Visitantes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon-enovis.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- =====================
+         NAVBAR
+    ========================== -->
+    <nav class="navbar" role="navigation" aria-label="Navegación principal">
+        <div class="nav-container">
+
+            <!-- Language Toggle -->
+            <div class="lang-toggle" role="group" aria-label="Cambiar idioma">
+                <button class="lang-btn lang-btn--active" data-lang="es" aria-pressed="true">ES</button>
+                <span class="lang-divider" aria-hidden="true">|</span>
+                <button class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+            </div>
+
+            <!-- Hamburger -->
+            <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false"
+                aria-controls="navMenu">
+                <span class="line" aria-hidden="true"></span>
+                <span class="line" aria-hidden="true"></span>
+                <span class="line" aria-hidden="true"></span>
+            </button>
+
+        </div>
+
+        <!-- Full-screen nav menu -->
+        <div class="nav-menu" id="navMenu" role="dialog" aria-modal="true" aria-label="Menú de navegación">
+            <ul class="nav-list" role="list">
+                <li><a href="#hero" class="nav-link" data-i18n="nav.home">Inicio</a></li>
+                <li><a href="#normas" class="nav-link" data-i18n="nav.norms">Normas de Acceso</a></li>
+                <li><a href="#lineamientos" class="nav-link" data-i18n="nav.guidelines">Lineamientos</a></li>
+                <li><a href="#emergencias" class="nav-link" data-i18n="nav.emergency">Plan de Emergencias</a></li>
+                <li><a href="#ambiente" class="nav-link" data-i18n="nav.environment">Medio Ambiente</a></li>
+                <li><a href="#descargas" class="nav-link" data-i18n="nav.downloads">Descargas</a></li>
+                <li><a href="#contacto" class="nav-link" data-i18n="nav.contact">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- =====================
+         HERO
+    ========================== -->
+    <section class="hero" id="hero" aria-label="Encabezado principal">
+        <div class="hero-content">
+            <img class="Enovis-logo-hero" src="assets/Enovis-logo.png" alt="Logo Enovis">
+            <div class="ehs">
+                <img class="helmet draggable" src="assets/PROPS-items-06.png" alt="" aria-hidden="true">
+                <h1 class="hero-title" aria-label="EHS">Guía de Seguridad para Visitantes</h1>
+                <img class="shield draggable" src="assets/PROPS-items-02.png" alt="" aria-hidden="true">
+            </div>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">EHS | Environmental Health & Safety</p>
+        </div>
+    </section>
+
+
+    <!-- =====================
+         INTRO
+    ========================== -->
+    <section class="section-intro" aria-label="Introducción">
+        <div class="intro-sticky-wrap">
+            <p class="intro-text">
+                <!--
+                      Cada palabra es un <span class="intro-word">.
+                      Las palabras clave llevan además class="intro-word--key"
+                      El subrayado animado es un <span class="intro-underline"> dentro.
+                      El JS las iluminará progresivamente con scroll.
+                    -->
+                <span class="intro-word">Es</span>
+                <span class="intro-word">un</span>
+                <span class="intro-word">placer</span>
+                <span class="intro-word">recibirlo</span>
+                <span class="intro-word">en</span>
+                <span class="intro-word">nuestras</span>
+                <span class="intro-word">instalaciones.</span>
+                <span class="intro-word">Su</span>
+                <span class="intro-word">seguridad</span>
+                <span class="intro-word">y</span>
+                <span class="intro-word">bienestar</span>
+                <span class="intro-word">son</span>
+                <span class="intro-word">nuestra</span>
+                <span class="intro-word intro-word--key" data-i18n-word="intro.priority">
+                    prioridad<span class="intro-underline"></span>
+                </span>.
+                <span class="intro-word">Esta</span>
+                <span class="intro-word">guía</span>
+                <span class="intro-word">le</span>
+                <span class="intro-word">proporciona</span>
+                <span class="intro-word">información</span>
+                <span class="intro-word">esencial</span>
+                <span class="intro-word">sobre</span>
+                <span class="intro-word">nuestras</span>
+                <span class="intro-word intro-word--key" data-i18n-word="intro.key1">
+                    normas<span class="intro-underline"></span>
+                </span>
+                <span class="intro-word">de</span>
+                <span class="intro-word intro-word--key" data-i18n-word="intro.key2">
+                    seguridad<span class="intro-underline"></span>,
+                </span>
+                <span class="intro-word">procedimientos</span>
+                <span class="intro-word">de</span>
+                <span class="intro-word intro-word--key" data-i18n-word="intro.key3">
+                    emergencia<span class="intro-underline"></span>
+                </span>
+                <span class="intro-word">y</span>
+                <span class="intro-word">estándares</span>
+                <span class="intro-word intro-word--key" data-i18n-word="intro.key4">
+                    ambientales<span class="intro-underline"></span>.
+                </span>
+                <span class="intro-word">Por</span>
+                <span class="intro-word">favor,</span>
+                <span class="intro-word">tómese</span>
+                <span class="intro-word">un</span>
+                <span class="intro-word">momento</span>
+                <span class="intro-word">para</span>
+                <span class="intro-word">familiarizarse</span>
+                <span class="intro-word">con</span>
+                <span class="intro-word">estas</span>
+                <span class="intro-word intro-word--key" data-i18n-word="intro.key5">
+                    directrices<span class="intro-underline"></span>.
+                </span>
+            </p>
+        </div>
+    </section>
+
+
+    <!-- =====================
+         NORMAS DE ACCESO
+    ========================== -->
+    <section class="section-norms" id="normas" aria-labelledby="normas-heading">
+        
+        <div class="visual-title-wrapper">
+            <video class="title-video" src="assets/VIDEO/VIDEO-web.mp4" autoplay muted loop playsinline
+                aria-hidden="true"></video>
+            <h2 class="visual-title" id="normas-heading" data-i18n="norms.title">Normas de Acceso</h2>
+        </div>
+
+        <div class="split-wrapper">
+                <!-- Card 1 -->
+            <!-- Columna izquierda: cards -->
+            <div class="split-left">
+            
+                <article class="parallax-card" data-index="0">
+                    <h3 class="norms-title" data-i18n="norms.badge.title">Registro de Gafete</h3>
+                    <ul>
+                        <li data-i18n="norms.badge.1">Diríjase a caseta para registro</li>
+                        <li data-i18n="norms.badge.2">Porte su gafete visible</li>
+                        <li data-i18n="norms.badge.3">Devuélvalo al salir</li>
+                    </ul>
+                </article>
+            
+                <article class="parallax-card" data-index="1">
+                    <h3 class="norms-title" data-i18n="norms.inspection.title">Inspección</h3>
+                    <ul>
+                        <li data-i18n="norms.inspection.1">Permita inspección de persona</li>
+                        <li data-i18n="norms.inspection.2">Revisión de pertenencias</li>
+                        <li data-i18n="norms.inspection.3">Inspección de vehículo si aplica</li>
+                    </ul>
+                </article>
+            
+                <article class="parallax-card" data-index="2">
+                    <h3 class="norms-title" data-i18n="norms.restrictions.title">Restricciones</h3>
+                    <ul>
+                        <li data-i18n="norms.restrictions.1">No fotografías ni videos</li>
+                        <li data-i18n="norms.restrictions.2">No alimentos en áreas operativas</li>
+                        <li data-i18n="norms.restrictions.3">No lentes oscuros ni gorras</li>
+                    </ul>
+                </article>
+            
+                <article class="parallax-card" data-index="3">
+                    <h3 class="norms-title" data-i18n="norms.prohibitions.title">Prohibiciones</h3>
+                    <ul>
+                        <li data-i18n="norms.prohibitions.1">No fumar</li>
+                        <li data-i18n="norms.prohibitions.2">Drogas y alcohol</li>
+                        <li data-i18n="norms.prohibitions.3">Armas de fuego</li>
+                        <li data-i18n="norms.prohibitions.4">Armas blancas</li>
+                    </ul>
+                </article>
+            
+                <article class="parallax-card" data-index="4">
+                    <h3 class="norms-title" data-i18n="norms.attire.title">Vestimenta</h3>
+                    <ul>
+                        <li data-i18n="norms.attire.1">Lentes obligatorios</li>
+                        <li data-i18n="norms.attire.2">No shorts</li>
+                        <li data-i18n="norms.attire.3">No ropa holgada</li>
+                        <li data-i18n="norms.attire.4">No accesorios colgantes</li>
+                        <li data-i18n="norms.attire.5">Calzado cerrado</li>
+                    </ul>
+                </article>
+            
+            </div>
+            
+            <!-- Columna derecha: fotos sticky — solo desktop -->
+            <div class="split-right" aria-hidden="true">
+                <div class="visual-wrapper">
+                    <div class="visual"><img src="assets/PHOTOS/Enovis-photo-03.JPG" alt=""></div>
+                    <div class="visual"><img src="assets/PHOTOS/Enovis-photo-02.png" alt=""></div>
+                    <div class="visual"><img src="assets/PHOTOS/Enovis-photo-04.JPG" alt=""></div>
+                    <div class="visual"><img src="assets/PHOTOS/Enovis-photo-05.JPG" alt=""></div>
+                    <div class="visual"><img src="assets/PHOTOS/Vestimenta-enovis.JPG" alt=""></div>
+                </div>
+         
+            </div>
+    
+        </div>
+    </section>
+
+
+    <!-- =====================
+         SEGURIDAD ES PRIMERO
+    ========================== -->
+    <section class="section-seguridad" id="seguridad" aria-labelledby="seguridad-heading">
+        <div class="container">
+            <div class="seguridad-content">
+
+                <div class="seguridad-text">
+                    <h2 id="seguridad-heading" data-i18n="safety.title">En Enovis<br>la Seguridad<br>es Primero</h2>
+                </div>
+
+                <div class="seguridad-image">
+                    <img class="cone cone-top" src="assets/PROPS-items-03.png" alt="" aria-hidden="true">
+                    <img class="photo" src="assets/PHOTOS/Enovis-photo-01.png" alt="Equipo de seguridad Enovis">
+                    <img class="cone cone-bottom" src="assets/PROPS-items-01.png" alt="" aria-hidden="true">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =====================
+         LINEAMIENTOS GENERALES 
+    ========================== -->
+    <section class="section-gallery" id="lineamientos" aria-labelledby="gallery-heading">
+        <div class="container">
+            <h2 class="gallery-title" id="gallery-heading" data-i18n="guidelines.title">Lineamientos generales de
+                seguridad</h2>
+
+            <div class="gallery-grid" role="list">
+
+                <!-- Item 1 – EPP por Áreas -->
+                <div class="gallery-item gallery-item-large" role="listitem">
+                    <button class="gallery-card" data-modal="modal-epp" aria-haspopup="dialog"
+                        aria-controls="modal-epp">
+                        <h3 class="card-gallery-title" data-i18n="guidelines.epp.title">EPP por Áreas</h3>
+                        <span class="gallery-card__cta" data-i18n="guidelines.cta">Ver más +</span>
+                    </button>
+                </div>
+
+                <!-- Item 2 – Permiso de trabajos de alto riesgo -->
+                <div class="gallery-item" role="listitem">
+                    <button class="gallery-card" data-modal="modal-permiso" aria-haspopup="dialog"
+                        aria-controls="modal-permiso">
+                        <h3 class="card-gallery-title" data-i18n="guidelines.permit.title">Permiso de trabajos de alto
+                            riesgo</h3>
+                        <span class="gallery-card__cta" data-i18n="guidelines.cta">Ver más +</span>
+                    </button>
+                </div>
+
+                <!-- Item 3 – Clasificación de trabajos de alto riesgo -->
+                <div class="gallery-item" role="listitem">
+                    <button class="gallery-card" data-modal="modal-clasificacion" aria-haspopup="dialog"
+                        aria-controls="modal-clasificacion">
+                        <h3 class="card-gallery-title" data-i18n="guidelines.classification.title">Clasificación de
+                            trabajos de alto riesgo</h3>
+                        <span class="gallery-card__cta" data-i18n="guidelines.cta">Ver más +</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =====================
+         MODALES – Lineamientos
+    ========================== -->
+
+   <!-- Modal: EPP por Áreas -->
+    <div class="modal" id="modal-epp" role="dialog" aria-modal="true" aria-labelledby="modal-epp-title" hidden>
+        <div class="modal-overlay" data-close-modal></div>
+        <div class="modal-box">
+            <button class="modal-close" data-close-modal aria-label="Cerrar">✕</button>
+            <h2 class="modal-title" id="modal-epp-title" data-i18n="modal.epp.title">EPP por Áreas</h2>
+            <div class="modal-body">
+                <p class="modal-intro" data-i18n="modal.epp.intro">El EPP es obligatorio en todo momento dentro de planta. Porta siempre el equipo requerido según el área que visitas.</p>
+                <table class="epp-table" aria-label="EPP requerido por área">
+                    <thead>
+                        <tr>
+                            <th data-i18n="modal.epp.th1">Área</th>
+                            <th data-i18n="modal.epp.th2">EPP Requerido</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="epp-area" data-i18n="modal.epp.area1">Almacén</td>
+                            <td>
+                                <span class="epp-tag" data-i18n="modal.epp.a1t1">Calzado de seguridad</span>
+                                <span class="epp-tag" data-i18n="modal.epp.a1t2">Chaleco</span>
+                                <span class="epp-tag" data-i18n="modal.epp.a1t3">Casco</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="epp-area" data-i18n="modal.epp.area2">Maquinado</td>
+                            <td>
+                                <span class="epp-tag" data-i18n="modal.epp.a2t1">Tapones auditivos</span>
+                                <span class="epp-tag" data-i18n="modal.epp.a2t2">Calzado de seguridad</span>
+                                <span class="epp-tag" data-i18n="modal.epp.a2t3">Lentes</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="epp-area" data-i18n="modal.epp.area3">Moldeo</td>
+                            <td>
+                                <span class="epp-tag" data-i18n="modal.epp.a3t1">Calzado de seguridad</span>
+                                <span class="epp-tag" data-i18n="modal.epp.a3t2">Lentes</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="epp-area" data-i18n="modal.epp.area4">Chattanooga</td>
+                            <td>
+                                <span class="epp-tag" data-i18n="modal.epp.a4t1">Calzado de seguridad</span>
+                                <span class="epp-tag" data-i18n="modal.epp.a4t2">Lentes</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="epp-area" data-i18n="modal.epp.area5">Electroterapia</td>
+                            <td>
+                                <span class="epp-tag" data-i18n="modal.epp.a5t1">Bata azul</span>
+                                <span class="epp-tag" data-i18n="modal.epp.a5t2">Lentes</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-permiso" role="dialog" aria-modal="true" aria-labelledby="modal-permiso-title" hidden>
+        <div class="modal-overlay" data-close-modal></div>
+        <div class="modal-box">
+            <button class="modal-close" data-close-modal aria-label="Cerrar">✕</button>
+            <h2 class="modal-title" id="modal-permiso-title">Permiso de Trabajos de Alto Riesgo</h2>
+            <div class="modal-body">
+ 
+                <p class="modal-intro">Aplica a mantenimiento, facilities, proveedores y contratistas que realicen trabajos de alto riesgo.</p>
+ 
+                <!-- Tipos de trabajo -->
+                <h4 class="modal-section-label">Tipos de trabajos</h4>
+                <div class="permit-tags-wrap">
+                    <span class="epp-tag">⚗️ Sustancias químicas</span>
+                    <span class="epp-tag">⚡ Instalaciones eléctricas</span>
+                    <span class="epp-tag">🏗️ Equipos de elevación</span>
+                    <span class="epp-tag">🔧 Herramientas manuales</span>
+                    <span class="epp-tag">🛢️ Fluidos peligrosos</span>
+                    <span class="epp-tag">🔒 Espacios confinados</span>
+                    <span class="epp-tag">📐 Alturas</span>
+                </div>
+                <p class="modal-note">⚠️ Los trabajos en caliente tienen un procedimiento separado.</p>
+ 
+                <!-- Dos columnas: antes y durante -->
+                <div class="permit-cols">
+                    <div class="permit-col">
+                        <h4 class="modal-section-label modal-section-label--red">Requisitos previos</h4>
+                        <ul class="modal-list">
+                            <li>Enviar DC-3, SUA/seguro vigente y plan de trabajo.</li>
+                            <li>Registrar al personal externo en bitácora de visitas.</li>
+                        </ul>
+                    </div>
+                    <div class="permit-col">
+                        <h4 class="modal-section-label modal-section-label--red">Durante el trabajo</h4>
+                        <ul class="modal-list">
+                            <li>Presentar credencial y solicitar permiso en Caseta 1.</li>
+                            <li>Personal externo debe ir acompañado.</li>
+                            <li>Portar credencial de contratista en todo momento.</li>
+                        </ul>
+                    </div>
+                </div>
+ 
+                <p class="modal-warning">Cualquier incumplimiento impedirá la autorización del permiso o será cancelado si se detectan actos inseguros.</p>
+ 
+            </div>
+        </div>
+    </div>
+ 
+    <!-- Modal: Clasificación de trabajos de alto riesgo -->
+    <div class="modal" id="modal-clasificacion" role="dialog" aria-modal="true" aria-labelledby="modal-clas-title" hidden>
+        <div class="modal-overlay" data-close-modal></div>
+        <div class="modal-box modal-box--wide">
+            <button class="modal-close" data-close-modal aria-label="Cerrar">✕</button>
+            <h2 class="modal-title" id="modal-clas-title">Clasificación de Trabajos de Alto Riesgo</h2>
+            <div class="modal-body">
+ 
+                <div class="clas-grid">
+ 
+                    <div class="clas-card">
+                        <h4 class="clas-card__title">⚗️ Sustancias Químicas y Fluidos Peligrosos</h4>
+                        <ul class="clas-card__list">
+                            <li>Enviar hoja de datos de seguridad (HDS).</li>
+                            <li>Identificación de riesgos.</li>
+                            <li>Guantes, mascarilla, lentes y equipo de emergencia.</li>
+                        </ul>
+                    </div>
+ 
+                    <div class="clas-card">
+                        <h4 class="clas-card__title">⚡ Instalaciones Eléctricas</h4>
+                        <ul class="clas-card__list">
+                            <li>Notificar a Facilities.</li>
+                            <li>Aplicar sistema LOTO.</li>
+                            <li>Guantes dieléctricos, casco y calzado adecuado.</li>
+                        </ul>
+                    </div>
+ 
+                    <div class="clas-card">
+                        <h4 class="clas-card__title">🏗️ Equipos de Elevación</h4>
+                        <ul class="clas-card__list">
+                            <li>Validar autorización para operar.</li>
+                            <li>Establecer zonas seguras y señalización.</li>
+                            <li>Chaleco de seguridad y calzado antiderrapante.</li>
+                        </ul>
+                    </div>
+ 
+                    <div class="clas-card">
+                        <h4 class="clas-card__title">🔧 Herramientas Manuales</h4>
+                        <ul class="clas-card__list">
+                            <li>Inspección previa.</li>
+                            <li>Mantener herramientas en buen estado.</li>
+                            <li>Lentes, calzado y chaleco de seguridad.</li>
+                        </ul>
+                    </div>
+ 
+                    <div class="clas-card">
+                        <h4 class="clas-card__title">🔒 Espacios Confinados</h4>
+                        <ul class="clas-card__list">
+                            <li>Vigilante en contacto con el trabajador.</li>
+                            <li>Monitoreo de atmósfera y oxígeno.</li>
+                            <li>Arnés y ventilación adecuada.</li>
+                        </ul>
+                    </div>
+ 
+                    <div class="clas-card">
+                        <h4 class="clas-card__title">📐 Trabajos en Alturas</h4>
+                        <ul class="clas-card__list">
+                            <li>Evaluación médica previa.</li>
+                            <li>Arnés, líneas de vida y puntos de anclaje.</li>
+                            <li>Área despejada (3 metros).</li>
+                        </ul>
+                    </div>
+ 
+                </div>
+ 
+                <p class="modal-warning">Al finalizar, el área debe quedar limpia y segura. Entregar el permiso en Caseta 1 para validación.</p>
+ 
+            </div>
+        </div>
+    </div>
+ 
+
+
+    <!-- =====================
+         MEDIO AMBIENTE – Cards con foto
+    ========================== -->
+    <section class="section-ambiente" id="ambiente" aria-labelledby="ambiente-heading">
+        <div class="container">
+
+            <div class="ambiente-header">
+                <h2 class="ambiente-title" id="ambiente-heading" data-i18n="environment.title">Medio<br>Ambiente</h2>
+            </div>
+
+            <!-- Environment cards grid -->
+            <div class="ambiente-grid" role="list">
+
+                <article class="ambiente-card" role="listitem">
+                    <div class="ambiente-card__img-wrap">
+                        <img src="assets/PHOTOS/Agua-enovis.JPG" alt="Ahorre energía y agua" loading="lazy">
+                    </div>
+                    <div class="ambiente-card__body">
+                        <div class="ambiente-card__icon" aria-hidden="true">💧</div>
+                        <h3 data-i18n="env.energy.title">Ahorre energía y agua</h3>
+                        <p data-i18n="env.energy.desc">Cierre las llaves al no usarlas y apague equipos que no estén en
+                            operación.</p>
+                    </div>
+                </article>
+
+                <article class="ambiente-card" role="listitem">
+                    <div class="ambiente-card__img-wrap">
+                        <img src="assets/PHOTOS/Luz-enovis.JPG" alt="Apague luces innecesarias" loading="lazy">
+                    </div>
+                    <div class="ambiente-card__body">
+                        <div class="ambiente-card__icon" aria-hidden="true">💡</div>
+                        <h3 data-i18n="env.lights.title">Apague luces innecesarias</h3>
+                        <p data-i18n="env.lights.desc">Al salir de una sala o área vacía, apague la iluminación para
+                            reducir el consumo energético.</p>
+                    </div>
+                </article>
+
+                <article class="ambiente-card" role="listitem">
+                    <div class="ambiente-card__img-wrap">
+                        <img src="assets/PHOTOS/Basura-enovis.JPG" alt="Reduce, reutiliza, recicla" loading="lazy">
+                    </div>
+                    <div class="ambiente-card__body">
+                        <div class="ambiente-card__icon" aria-hidden="true">♻️</div>
+                        <h3 data-i18n="env.recycle.title">Reduzca, reutilice, recicle</h3>
+                        <p data-i18n="env.recycle.desc">Use los contenedores de reciclaje disponibles. Separe papel,
+                            plástico, metal y residuos generales.</p>
+                    </div>
+                </article>
+
+                <article class="ambiente-card" role="listitem">
+                    <div class="ambiente-card__img-wrap">
+                        <img src="assets/PHOTOS/Impresora-enovis.JPG" alt="Imprima solo lo necesario" loading="lazy">
+                    </div>
+                    <div class="ambiente-card__body">
+                        <div class="ambiente-card__icon" aria-hidden="true">🖨️</div>
+                        <h3 data-i18n="env.print.title">Imprima solo lo necesario</h3>
+                        <p data-i18n="env.print.desc">Prefiera documentos digitales. Si imprime, use las dos caras del
+                            papel.</p>
+                    </div>
+                </article>
+
+                <article class="ambiente-card" role="listitem">
+                    <div class="ambiente-card__img-wrap">
+                        <img src="assets/PHOTOS/No-fumar.jpg" alt="Lugar libre de humo" loading="lazy">
+                    </div>
+                    <div class="ambiente-card__body">
+                        <div class="ambiente-card__icon" aria-hidden="true">🚭</div>
+                        <h3 data-i18n="env.smoke.title">Lugar libre de humo</h3>
+                        <p data-i18n="env.smoke.desc">Nuestras instalaciones son 100% libres de humo. Está prohibido
+                            fumar dentro del recinto.</p>
+                    </div>
+                </article>
+
+                <article class="ambiente-card" role="listitem">
+                    <div class="ambiente-card__img-wrap">
+                        <!-- Placeholder para foto de eco-pilas -->
+                        <img src="assets/PHOTOS/Eco-pilas.JPG" alt="Eco-pilas y reciclaje de baterías"
+                            loading="lazy">
+                    </div>
+                    <div class="ambiente-card__body">
+                        <div class="ambiente-card__icon" aria-hidden="true">🔋</div>
+                        <h3 data-i18n="env.batteries.title">Eco-pilas</h3>
+                        <p data-i18n="env.batteries.desc">Contamos con contenedores especiales para el reciclaje de
+                            baterías y pilas. Encuéntralos en las áreas comunes.</p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =====================
+         PLAN DE EMERGENCIAS
+    ========================== -->
+    <section class="section-emergencias" id="emergencias" aria-labelledby="emergencias-heading">
+        <div class="container">
+
+            <div class="emergencias-header">
+                <h2 class="section-title-white" id="emergencias-heading" data-i18n="emergency.title">Planes de
+                    Emergencias</h2>
+                <p class="emergencias-subtitle" data-i18n="emergency.subtitle">
+                    Su seguridad y bienestar son nuestra prioridad. Conozca los procedimientos ante una emergencia.
+                </p>
+                <div class="container-svg" aria-hidden="true">
+                    <svg class="flecha" width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 7L17 17M17 17V7M17 17H7" stroke="white" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+
+            <!-- Acordeón de emergencias -->
+            <div class="emergencias-list" role="list">
+
+                <!-- Incendio -->
+                <div class="emergencia-item" role="listitem">
+                    <button class="emergencia-header" aria-expanded="false" aria-controls="emergencia-incendio-content"
+                        id="emergencia-incendio-btn">
+                        <span class="emergencia-toggle" aria-hidden="true">+</span>
+                        <h3 data-i18n="emergency.fire.title">Incendio</h3>
+                    </button>
+                    <div class="emergencia-content" id="emergencia-incendio-content" role="region"
+                        aria-labelledby="emergencia-incendio-btn">
+                        <ul class="emergencia-steps">
+                            <li data-i18n="emergency.fire.1">Escuche la alarma de emergencia</li>
+                            <li data-i18n="emergency.fire.2">Siga indicaciones de brigadas</li>
+                            <li data-i18n="emergency.fire.3">Evacúe por salida más cercana</li>
+                            <li data-i18n="emergency.fire.4">Diríjase al punto de reunión (Caseta 1)</li>
+                            <li data-i18n="emergency.fire.5">No regrese hasta indicación</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sismo -->
+                <div class="emergencia-item" role="listitem">
+                    <button class="emergencia-header" aria-expanded="false" aria-controls="emergencia-sismo-content"
+                        id="emergencia-sismo-btn">
+                        <span class="emergencia-toggle" aria-hidden="true">+</span>
+                        <h3 data-i18n="emergency.earthquake.title">Sismo</h3>
+                    </button>
+                    <div class="emergencia-content" id="emergencia-sismo-content" role="region"
+                        aria-labelledby="emergencia-sismo-btn">
+                        <ul class="emergencia-steps">
+                            <li data-i18n="emergency.earthquake.1">Mantenga la calma</li>
+                            <li data-i18n="emergency.earthquake.2">Resguárdese en zonas seguras</li>
+                            <li data-i18n="emergency.earthquake.3">Aléjese de ventanas</li>
+                            <li data-i18n="emergency.earthquake.4">Espere indicaciones de brigadas</li>
+                            <li data-i18n="emergency.earthquake.5">Evacúe cuando finalice o suene alarma</li>
+                            <li data-i18n="emergency.earthquake.6">Diríjase al punto de reunión</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Accidente -->
+                <div class="emergencia-item" role="listitem">
+                    <button class="emergencia-header" aria-expanded="false" aria-controls="emergencia-accidente-content"
+                        id="emergencia-accidente-btn">
+                        <span class="emergencia-toggle" aria-hidden="true">+</span>
+                        <h3 data-i18n="emergency.accident.title">Accidente</h3>
+                    </button>
+                    <div class="emergencia-content" id="emergencia-accidente-content" role="region"
+                        aria-labelledby="emergencia-accidente-btn">
+                        <ul class="emergencia-steps">
+                            <li data-i18n="emergency.accident.1">Informe a su anfitrión inmediatamente</li>
+                            <li data-i18n="emergency.accident.2">Acérquese a servicio médico</li>
+                            <li data-i18n="emergency.accident.3">Llame al número de emergencia</li>
+                        </ul>
+                        <div class="emergency-contact">
+                            <span data-i18n="emergency.accident.label">Emergencia Médica</span>
+                            <a href="tel:6645204008" aria-label="Llamar al 664 520 4008">664 520 4008</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =====================
+         DESCARGAS
+    ========================== -->
+    <section class="section-descargas" id="descargas" aria-labelledby="descargas-heading">
+        <div class="container">
+            <h2 class="descargas-title" id="descargas-heading" data-i18n="downloads.title">Descarga la Guía</h2>
+            <p class="descargas-subtitle" data-i18n="downloads.subtitle">
+                Revisa la guía de visitantes en tu idioma.
+            </p>
+
+            <div class="descargas-grid">
+
+                <!-- Español -->
+                <a class="descarga-card" href="assets/docs/Visitors Guidelines_2026_esp.pdf" download
+                    aria-label="Descargar guía en español (PDF)">
+                    <div class="descarga-card__flag" aria-hidden="true">🇲🇽</div>
+                    <div class="descarga-card__info">
+                        <span class="descarga-card__lang" data-i18n="downloads.spanish">Español</span>
+                        <span class="descarga-card__name" data-i18n="downloads.guide">Guía para Visitantes</span>
+                        <span class="descarga-card__format">PDF</span>
+                    </div>
+                    <svg class="descarga-card__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 16L7 11M12 16L17 11M12 16V4M5 20H19" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+
+                <!-- English -->
+                <a class="descarga-card" href="assets/docs/Visitors Guidelines_2026_eng.pdf" download
+                    aria-label="Download visitor guide in English (PDF)">
+                    <div class="descarga-card__flag" aria-hidden="true">🇺🇸</div>
+                    <div class="descarga-card__info">
+                        <span class="descarga-card__lang" data-i18n="downloads.english">English</span>
+                        <span class="descarga-card__name" data-i18n="downloads.guide.en">Visitor Guidelines</span>
+                        <span class="descarga-card__format">PDF</span>
+                    </div>
+                    <svg class="descarga-card__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 16L7 11M12 16L17 11M12 16V4M5 20H19" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =====================
+         FOOTER
+    ========================== -->
+    <footer id="contacto" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-main">
+
+                <!-- Enovis Info -->
+                <div class="footer-column">
+                    <img class="Enovis-logo" src="assets/Enovis-logo.png" alt="Logo Enovis">
+                    <address>
+                        <p>Blvd. Industrial s/n</p>
+                        <p>Parque Industrial El Florido</p>
+                        <p>Tijuana, B.C. 22440</p>
+                        <p>México</p>
+                    </address>
+                </div>
+
+                <!-- Contacto -->
+                <div class="footer-column">
+                    <h4 data-i18n="footer.contact">CONTACTO</h4>
+                    <a href="https://enovis.com" target="_blank" rel="noopener" data-i18n="footer.website">Sitio Web
+                        Enovis</a>
+                    <p>EHS Department</p>
+                    <a href="tel:6645204008">664 520 4008</a>
+                </div>
+
+                <!-- Legal -->
+                <div class="footer-column">
+                    <h4 data-i18n="footer.legal">Legal</h4>
+                    <a href="#politica" data-i18n="footer.security.policy">Política de Seguridad</a>
+                    <a href="#privacidad" data-i18n="footer.privacy">Política de Privacidad</a>
+                    <a href="#terminos" data-i18n="footer.terms">Términos y Condiciones</a>
+                </div>
+
+            </div>
+
+            <div class="copyright">
+                <p data-i18n="footer.copyright">© 2026 Enovis Corporation. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Scripts -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/Draggable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/DrawSVGPlugin.min.js"></script>
+   
+
+    <script src="i18n.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
