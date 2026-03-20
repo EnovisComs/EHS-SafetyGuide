@@ -214,11 +214,21 @@ p {
 .nav-menu {
     position: fixed;
     inset: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100dvh;
     background: var(--black);
+    
+    /* Flex para centrar TODO el contenido */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
     padding: 80px 24px 40px;
-    overflow: hidden;
+    box-sizing: border-box; /* <-- crítico: evita overflow horizontal */
+    overflow-y: auto;
+    overflow-x: hidden;
+    
     pointer-events: none;
     z-index: 99;
 }
@@ -228,10 +238,23 @@ p {
     flex-direction: column;
     gap: clamp(16px, 3vh, 28px);
     align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+    max-width: 800px; /* evita que se estire demasiado en desktop */
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
 }
 
+.nav-list li {
+    width: 100%;
+    text-align: center;
+}
+
+
 .nav-list a {
-    font-family: --var(--font-regular);
+    font-family: var(--font-regular);
     font-weight: 800;
     font-size: clamp(2rem, 7vw, 5rem);
     color: var(--white);
@@ -1126,7 +1149,7 @@ p {
     box-shadow: var(--shadow-md);
 }
 
-@media (min-width: 480px) {
+@media (min-width: 375px) {
     .ambiente-card {
         flex: 1 1 calc(50% - 0.75rem);
     }
