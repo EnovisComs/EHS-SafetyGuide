@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     /* ============================================================
        DRAGGABLE
-    ============================================================ */
+
     Draggable.create(".draggable", {
         type: "x,y",
         inertia: true,
@@ -72,6 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
         onPress() { this.target.style.zIndex = 10; },
         onRelease() { this.target.style.zIndex = ""; }
     });
+        ============================================================ */
 
 
     /* ============================================================
@@ -89,8 +90,8 @@ document.addEventListener("DOMContentLoaded", () => {
        INTRO — scroll word reveal
     ============================================================ */
     const introSection = document.querySelector(".section-intro");
-    const introWords   = gsap.utils.toArray(".intro-word");
-    const totalWords   = introWords.length;
+    const introWords = gsap.utils.toArray(".intro-word");
+    const totalWords = introWords.length;
 
     if (introSection) {
         introSection.style.height = `${Math.max(250, totalWords * 18)}vh`;
@@ -110,8 +111,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
+
     /* ============================================================
-       NORMAS — HEADING con video (aparece a los 12 s)
+       NORMAS — HEADING con video 
     ============================================================ */
     const visualTitle = document.querySelector(".visual-title");
 
@@ -168,7 +170,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ScrollTrigger.create({
                 trigger: card,
                 start: "top 80%",
-                end:   "top 30%",
+                end: "top 30%",
                 toggleActions: "play none none reverse",
                 onEnter: () => gsap.to(split.words, {
                     y: 0, opacity: 1, duration: 0.55,
@@ -188,7 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ScrollTrigger.create({
                 trigger: card,
                 start: "top 75%",
-                end:   "top 25%",
+                end: "top 25%",
                 toggleActions: "play none none reverse",
                 onEnter: () => gsap.to(items, {
                     y: 0, opacity: 1, duration: 0.45,
@@ -216,7 +218,7 @@ document.addEventListener("DOMContentLoaded", () => {
             .filter(t => t._normsTrigger)
             .forEach(t => t.kill());
 
-        const cards   = gsap.utils.toArray(".parallax-card");
+        const cards = gsap.utils.toArray(".parallax-card");
         const visuals = gsap.utils.toArray(".visual");
         if (!visuals.length || !cards.length) return;
 
@@ -224,7 +226,7 @@ document.addEventListener("DOMContentLoaded", () => {
         visuals.forEach((v, i) => {
             gsap.set(v, {
                 opacity: i === 0 ? 1 : 0,
-                scale:   i === 0 ? 1 : 1.04
+                scale: i === 0 ? 1 : 1.04
             });
         });
 
@@ -249,8 +251,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const st = ScrollTrigger.create({
                 trigger: card,
                 start: "top center",
-                end:   "bottom center",
-                onEnter:     () => goTo(idx),
+                end: "bottom center",
+                onEnter: () => goTo(idx),
                 onEnterBack: () => goTo(idx)
             });
             st._normsTrigger = true; // marca para poder matarlos después
@@ -349,10 +351,10 @@ document.addEventListener("DOMContentLoaded", () => {
        EMERGENCIAS — ACORDEÓN
     ============================================================ */
     document.querySelectorAll(".emergencia-item").forEach(item => {
-        const btn     = item.querySelector(".emergencia-header");
+        const btn = item.querySelector(".emergencia-header");
         const content = item.querySelector(".emergencia-content");
-        const toggle  = item.querySelector(".emergencia-toggle");
-        const fullH   = content.scrollHeight;
+        const toggle = item.querySelector(".emergencia-toggle");
+        const fullH = content.scrollHeight;
 
         gsap.set(content, { height: 0, overflow: "hidden" });
         item._open = false;
@@ -375,12 +377,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (!item._open) {
                 gsap.to(content, { height: fullH, duration: 0.5, ease: "power3.out" });
-                gsap.to(toggle,  { rotation: 45,   duration: 0.35, ease: "back.out(2)" });
+                gsap.to(toggle, { rotation: 45, duration: 0.35, ease: "back.out(2)" });
                 item.classList.add("open");
                 btn.setAttribute("aria-expanded", "true");
             } else {
                 gsap.to(content, { height: 0, duration: 0.4, ease: "power2.inOut" });
-                gsap.to(toggle,  { rotation: 0,  duration: 0.3, ease: "back.out(2)" });
+                gsap.to(toggle, { rotation: 0, duration: 0.3, ease: "back.out(2)" });
                 item.classList.remove("open");
                 btn.setAttribute("aria-expanded", "false");
             }
@@ -405,9 +407,44 @@ document.addEventListener("DOMContentLoaded", () => {
     /* ============================================================
        DESCARGAS — entrada
     ============================================================ */
-    gsap.from(".descarga-card", {
-        scrollTrigger: { trigger: ".section-descargas", start: "top 80%", once: true },
-        y: 40, opacity: 0, duration: 0.7, ease: "power3.out", stagger: 0.15
+    gsap.from(".info-card", {
+        scrollTrigger: {
+            trigger: ".section-international",
+            start: "top 80%",
+            once: true
+        },
+        y: 40,
+        opacity: 0,
+        duration: 0.7,
+        ease: "power3.out",
+        stagger: 0.15
+    });
+    
+    gsap.from(".highlight-block", {
+        scrollTrigger: {
+            trigger: ".section-international",
+            start: "top 75%",
+            once: true
+        },
+        x: -20,
+        opacity: 0,
+        duration: 0.6,
+        ease: "power3.out",
+        delay: 0.2
+    });
+    
+    gsap.from(".step-item", {
+        scrollTrigger: {
+            trigger: ".info-card:last-child",
+            start: "top 85%",
+            once: true
+        },
+        y: 20,
+        opacity: 0,
+        duration: 0.5,
+        ease: "power3.out",
+        stagger: 0.12,
+        delay: 0.3
     });
 
 
