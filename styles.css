@@ -249,7 +249,7 @@ p {
 .nav-list a {
     font-family: var(--font-regular);
     font-weight: 800;
-    font-size: clamp(1.3rem, 3.5vw, 5rem);
+    font-size: clamp(1.3rem, 3.5vw, 3.8rem);
     color: var(--white);
     display: block;
     width: 100%;
