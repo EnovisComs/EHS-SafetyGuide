@@ -1135,7 +1135,7 @@ p {
     box-shadow: var(--shadow-md);
 }
 
-@media (min-width: 375px) {
+@media (min-width: 600px) {
     .ambiente-card {
         flex: 1 1 calc(50% - 0.75rem);
     }
