@@ -94,13 +94,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const totalWords = introWords.length;
 
     if (introSection) {
-        introSection.style.height = `${Math.max(250, totalWords * 18)}vh`;
+        introSection.style.height = `${Math.max(100, totalWords * 6)}vh`;
     }
 
     ScrollTrigger.create({
         trigger: introSection,
         start: "top top",
-        end: "bottom bottom",
+        end: "bottom 80%",
         scrub: true,
         onUpdate(self) {
             const litCount = Math.round(self.progress * totalWords);
